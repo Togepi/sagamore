@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Geist:wght@100..900&family=Uncial+Antiqua&display=swap');
+@import 'tailwindcss';
+
+@theme {
+    --font-geist :  "Geist", sans-serif;
+    --font-med : "Uncial Antiqua", system-ui;
+}
+
+:root {
+    body{
+        @apply font-geist 
+    }
+    a {
+        @apply text-blue-500
+    }
+
+    h1,h2,h3,h4{
+        @apply font-med
+    }
+    h2 {
+        @apply text-2xl md:text-4xl font-bold tracking-tight mb-4
+    }
+
+    
+}
