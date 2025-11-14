@@ -139,7 +139,7 @@
       />
     </section>
     <section class="p-5">
-      <h2>Losange</h2>
+      <h2>Carreau</h2>
       <p
         class="text-lg font-med font-semibold tracking-tight max-w-xl"
       >
@@ -147,7 +147,7 @@
       </p>
       <br />
       <p>
-        Je suis Losange, tissée de
+        Je suis Carreau, tissée de
         sorcellerie et de tradition. Je
         vis là où les arbres murmurent
         et les montagnes gardent leurs
