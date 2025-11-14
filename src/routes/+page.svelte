@@ -36,6 +36,10 @@
           >Chalet de La Palestine</a
         > dans la Vallée de joux
       </p>
+      <p>
+        Camping pour les Pjs, en cabane
+        pour les PNJS
+      </p>
       <p class="mt-4 text-sm">
         Si vous êtes intéresséx à faire
         PJ ou PNJ, vous pouvez déjà
