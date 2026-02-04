@@ -1,6 +1,7 @@
 <main class="dark:bg-black">
   <article>
-    <img src="/img/gn_sagamore.jpg" alt="" />
+    <img src="/img/gn_sagamore.jpg" alt="carte de sagamore et logo" class="hidden md:block" />
+    <img src="/img/gn_sagamore_mobile.jpg" alt="carte de sagamore et logo" class=" md:hidden" />
   </article>
   <article class="bg-black p-12">
     <section
