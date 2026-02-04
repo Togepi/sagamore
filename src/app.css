@@ -1,0 +1,94 @@
+@import url('https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Geist:wght@100..900&family=Merriweather:ital,opsz,wght@0,18..144,300..900;1,18..144,300..900&display=swap');
+@import 'tailwindcss';
+@font-face{
+    font-family: 'Aquifer';
+    src: url('/fonts/Aquifer.ttf') format("truetype") ;
+}
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+	--font-serif: 'EB Garamond', serif;
+	--font-sans: 'Geist', sans-serif;
+	--font-aqui : "Aquifer", serif;
+}
+@layer base {
+	body {
+		@apply bg-neutral-50 text-lg text-neutral-900 dark:bg-stone-800 dark:text-neutral-300;
+	}
+	a {
+		@apply text-orange-600 hover:underline;
+	}
+	.prose {
+		@apply max-w-5xl font-sans;
+	}
+	.prose h1 {
+		@apply md:mt-24 text-2xl md:text-6xl 2xl:text-nowrap font-aqui ;
+	}
+	.prose h1,
+	.prose h2,
+	.prose h3 {
+		@apply font-bold text-neutral-950/90 dark:text-stone-100;
+	}
+	.prose h2 {
+		@apply mt-24 mb-6 text-3xl;
+	}
+	.prose h3 {
+		@apply mt-12 mb-3 text-xl;
+	}
+	.prose h4 {
+		@apply mt-6 mb-2 font-bold;
+	}
+	.prose p {
+		@apply my-4  leading-8;
+	}
+	.prose ul {
+		@apply my-12;
+	}
+	.prose li {
+		@apply text-2xl;
+	}
+	.p a {
+		@apply text-orange-600 underline-offset-4 hover:underline;
+	}
+	.prose figure {
+		@apply mt-12 rounded-lg;
+	}
+	.prose img {
+		@apply rounded-lg;
+	}
+	.prose strong {
+		@apply text-2xl;
+	}
+	.prose figcaption {
+		@apply flex items-center gap-2 pt-5 text-neutral-500 italic dark:text-neutral-400;
+	}
+	.prose iframe {
+		@apply aspect-video h-auto w-full rounded-lg;
+	}
+	.prose blockquote {
+		@apply mt-2 border-l-4 pl-4 text-2xl italic;
+	}
+	.prose li {
+		@apply content-around pl-2 before:pr-2 before:content-['-'];
+	}
+	.timeLine {
+		@apply mt-24 border-l border-l-stone-400;
+	}
+	.timeLine h3,
+	.timeLine p {
+		@apply pl-8;
+	}
+	.introAnno {
+		@apply h-px w-16 bg-stone-400;
+	}
+	.badge {
+		@apply rounded-full border border-stone-400 bg-stone-300 px-8 text-stone-500;
+	}
+
+	figcaption::before {
+		content: url(data:image/svg+xml;charset=utf-8;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxNyAxMy4wOSI+PGRlZnM+PHN0eWxlPi5jbHMtMXtmaWxsOiNjMmMyYzJ9PC9zdHlsZT48L2RlZnM+PHRpdGxlPmNhbWVyYTwvdGl0bGU+PHBhdGggY2xhc3M9ImNscy0xIiBkPSJNOC41IDUuNDRhMi4yMSAyLjIxLjAgMTAyLjIxIDIuMjFBMi4yMSAyLjIxLjAgMDA4LjUgNS40NHptNi4yOS0zLjIzaC0yLjU1QTIuMjEgMi4yMS4wIDAwMTAgMEg3QTIuMjEgMi4yMS4wIDAwNC43NiAyLjIxSDIuMjFhMi4yMSAyLjIxLjAgMDAtMi4yMSAyLjIxdjYuNDZhMi4yMSAyLjIxLjAgMDAyLjIxIDIuMjFoMTIuNThBMi4yMSAyLjIxLjAgMDAxNyAxMC44OFY0LjQyYTIuMjEgMi4yMS4wIDAwLTIuMjEtMi4yMXpNOC41IDExLjU2YTMuOTEgMy45MS4wIDExMy45MS0zLjkxQTMuOTEgMy45MS4wIDAxOC41IDExLjU2eiIvPjwvc3ZnPg==);
+		width: 16px;
+		height: 16px;
+		transform: translateY(-5px);
+	}
+}
