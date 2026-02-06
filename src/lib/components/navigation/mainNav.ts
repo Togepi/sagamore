@@ -3,146 +3,146 @@ export const dataLink = {
 	navMain: [
 		{
 			title: 'Introduction ',
-			url: '/wiki/introduction',
+			url: '/#introduction',
 			items: [
 				{
+					title: 'Accueil',
+					url: '/#accueil'
+				},
+				{
 					title: 'Pitch',
-					url: '/wiki/introduction/pitch'
+					url: '/#pitch'
 				},
 				{
 					title: "Note d'intention",
-					url: '/wiki/introduction/noteIntention'
+					url: '/#noteIntention'
 				},
 				{
-					title: 'Synopsis',
-					url: '/wiki/introduction/synopsis'
+					title: 'Infos Pratiques',
+					url: '/#infosPratiques'
 				}
 			]
 		},
 		{
-			title: 'Règles du jeu',
-			url: '/wiki/reglesDuJeu',
+			title: 'Règles de sécurité',
+			url: '/#reglesSecurite',
 			items: [
 				{
-					title: 'Règles de sécurité',
-					url: '/wiki/reglesDuJeu/reglesDeSecurite'
+					title: 'Sécurité Physique',
+					url: '/#securitePhysique'
 				},
 				{
-					title: 'Mécaniques générales',
-					url: '/wiki/reglesDuJeu/mecaniquesGenerales'
+					title: 'Sécurité Émotionelle',
+					url: '/#securiteEmotionelle'
 				},
 				{
-					title: 'PVP',
-					url: '/wiki/reglesDuJeu/pvp'
+					title: 'Fairplay',
+					url: '/#faireplay'
+				}
+			]
+		},
+		{
+			title: 'Mécaniques générales',
+			url: '/#mecaniquesGenerales',
+			items: [
+				{
+					title: 'Les tours de jeux',
+					url: '/#tourDeJeux'
 				},
 				{
-					title: 'Création de personnage',
-					url: '/wiki/reglesDuJeu/creationDePersonnage'
+					title: 'Situation du royaume',
+					url: '/#situationRoyaume'
 				},
 				{
-					title: 'Personnalisation avancée',
-					url: '/wiki/reglesDuJeu/personnalisationAvancee'
+					title: 'Carte Du Royaume',
+					url: '/#carteRoyaume'
+				},
+				{
+					title: 'Carte des Merveilles',
+					url: '/#carteMerveille'
+				},
+
+				{
+					title: 'Votations',
+					url: '/#votations'
+				},
+				{ title: 'Pouvoir de Lignée', url: '/#pouvoirLignee' }
+			]
+		},
+		//factions : La Guilde des Marchands, La Garde du Chaos, Les Scriptus, Les Redividus, La Lupa, Les Raiders ,L'Union de la Forêt, Le Village  Mycéanéen
+		{
+			title: 'Domaine',
+			url: '/#domaine',
+			items: [
+				{
+					title: 'Votre domaine',
+					url: '/#votredomaine'
+				}
+			]
+		},
+		{
+			title: 'Créer votre Personnage',
+			url: '/#creerPersonnage',
+			items: [
+				{
+					title: 'Votre Personnage',
+					url: '/#votrePersonnage'
+				},
+				{
+					title: 'Spécialisation',
+					url: '/#specialisationPersonnage'
+				}
+			]
+		},
+		{
+			title: 'Vos actions',
+			url: '/#actions',
+			items: [
+				{
+					title: 'Actions en jeu',
+					url: '/#actionEnJeu'
+				},
+				{
+					title: 'Action sur la carte',
+					url: '/#actionSurLaCarte'
+				},
+				{
+					title: 'Action de domaine',
+					url: '/#actionDeDomaine'
 				}
 			]
 		},
 		{
 			title: 'Univers',
-			url: '/univers',
+			url: '/#univers',
 			items: [
 				{
-					title: 'Histoire du Petit Monde',
-					url: '/wiki/univers/histoireDuPetitMonde'
+					title: 'Sagamore',
+					url: '/#universSagamore'
 				},
 				{
-					title: 'Le Petite Monde actuel',
-					url: '/wiki/univers/aujourdhui'
+					title: 'Les Duchés',
+					url: '/#duches'
 				},
 				{
-					title: 'Argenin',
-					url: '/wiki/univers/argenin'
+					title: 'Les Comptés',
+					url: '/#comptes'
 				},
 				{
-					title: 'Espèces',
-					url: '/wiki/univers/especes'
+					title: 'Les forces du mal',
+					url: '/#forceDuMal'
 				},
+				{
+					title: 'Les autres pays',
+					url: '/#lesAutresPays'
+				}
+			]
+		},
 
-				{
-					title: 'La république Marchande',
-					url: '/wiki/univers/laRepubliqueMarchande'
-				},
-				{ title: 'Les Peuples Libres', url: '/wiki/univers/lesPeuplesLibres' },
-
-				{
-					title: 'PNJ importants',
-					url: '/wiki/univers/pnjImportants'
-				},
-				{
-					title: 'Lieux importants',
-					url: '/wiki/univers/lieuxImportants'
-				}
-			]
-		},
-		//factions : La Guilde des Marchands, La Garde du Chaos, Les Scriptus, Les Redividus, La Lupa, Les Raiders ,L'Union de la Forêt, Le Village  Mycéanéen
-		{
-			title: 'Factions',
-			url: '/factions',
-			items: [
-				{
-					title: 'La Guilde des Marchands',
-					url: '/wiki/factions/guildeDesMarchands'
-				},
-				{
-					title: 'La Garde du Chaos',
-					url: '/wiki/factions/gardeDuChaos'
-				},
-				{
-					title: 'Les Scriptus',
-					url: '/wiki/factions/scriptus'
-				},
-				{
-					title: 'Les Redividus',
-					url: '/wiki/factions/redividus'
-				},
-				{
-					title: 'La Lupa',
-					url: '/wiki/factions/lupa'
-				},
-				{
-					title: 'Les Raiders',
-					url: '/wiki/factions/raiders'
-				},
-				{
-					title: 'L’Union de la Forêt',
-					url: '/wiki/factions/unionDeLaForet'
-				},
-				{
-					title: 'Le Village Mycéanéen',
-					url: '/wiki/factions/villageMyceanen'
-				}
-			]
-		},
-		{
-			title: 'Mécaniques avancées',
-			url: '/wiki/mecaniquesAvancees',
-			items: [
-				{
-					title: 'Mécaniques des factions',
-					url: '/wiki/mecaniquesAvancees/mecaniquesDesFactions'
-				},
-				{
-					title: 'Gestion de la Carte',
-					url: '/wiki/mecaniquesAvancees/gestionDeLaCarte'
-				},
-				{
-					title: 'Jeux du Baron',
-					url: '/wiki/mecaniquesAvancees/jeuxDuBaron'
-				}
-			]
-		},
 		//DOcumentation : La création de personnage, Les mécaniques de jeu, Les factions, Les PNJ, Les objets, Les lieux
 		{
 			title: 'Documentation',
-			url: '/wiki/documentation',
+			url: '/#documentation',
 			items: []
 		}
 	]

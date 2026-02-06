@@ -59,10 +59,10 @@
 	<main
 		class="fixed top-0 left-0 h-dvh w-2/3 border-r border-r-neutral-200 md:w-60 dark:border-r-stone-800 {menuHidden
 			? 'translate-x-0'
-			: '-translate-x-full md:translate-x-0'} 0 z-50 flex flex-col justify-between overflow-y-scroll bg-stone-50 transition-all md:overflow-hidden md:bg-stone-100 dark:md:bg-stone-900"
+			: '-translate-x-full md:translate-x-0'} 0 z-50 flex flex-col justify-between overflow-y-scroll bg-stone-50 transition-all md:overflow-hidden md:bg-stone-100 dark:md:bg-stone-700/50"
 	>
 		<header class="flex items-center justify-between px-4 py-2">
-			<a href="/" class="text-xl font-bold text-stone-900 dark:text-white ">Wiki Sagamore</a>
+			<a href="#accueil" class="text-xl font-bold text-stone-900 dark:text-white">Wiki Sagamore</a>
 
 			<!-- Toggle dark mode -->
 			<button
@@ -93,21 +93,30 @@
 				{/if}
 			</button>
 		</header>
-
+		<section class=" w-full p-4">
+			<a href="/carteSagamore"
+				><img
+					src="/img/side_carte_icone.avif"
+					alt="Icone de la carte de sagamore"
+					class="rounded border-2 border-amber-800 hover:brightness-125"
+				/></a
+			>
+		</section>
 		<article class="scrollbar-hover pt-4 pb-32 md:overflow-y-auto">
 			<nav class="px-2">
 				{#each dataLink.navMain as section}
 					<div class="mb-12">
 						<!-- Section principale -->
-						<p
-							class="block rounded px-3 py-2 transition-colors hover:underline {page.url.pathname.includes(
+						<a
+							href={section.url}
+							class="block rounded px-3 py-2 text-stone-950 transition-colors hover:underline dark:text-stone-50 {page.url.pathname.includes(
 								section.url
 							)
 								? '  font-bold  '
 								: ' font-semibold  '}"
 						>
 							{section.title}
-						</p>
+						</a>
 
 						<!-- Sous-éléments toujours visibles -->
 						{#if section.items}
@@ -115,8 +124,10 @@
 								{#each section.items as item}
 									<a
 										href={item.url}
-										class=" block px-1 py-1.5 text-sm transition-all hover:bg-neutral-200/50
-										 hover:text-black hover:no-underline dark:hover:text-white {page.url.pathname.includes(item.url)
+										class=" block px-1 py-1.5 text-sm transition-all hover:bg-neutral-200/50 hover:text-black
+										 hover:no-underline dark:hover:bg-neutral-600/20 dark:hover:text-white {page.url.pathname.includes(
+											item.url
+										)
 											? '    pl-2  text-neutral-950  dark:text-neutral-100  '
 											: 'text-neutral-700 dark:text-neutral-400   '}"
 									>
@@ -139,7 +150,6 @@
 		<footer
 			class="bottom-0 left-0 flex w-full flex-col items-start gap-y-2 bg-stone-100 px-4 py-2 md:absolute dark:bg-stone-900"
 		>
-		
 			<p class="text-xs text-stone-900 dark:text-stone-400">© 2025 Wiki Sagamore</p>
 		</footer>
 	</main>
